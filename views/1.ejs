@@ -1,0 +1,17 @@
+<%- include('layouts/head.ejs') %>
+<%- include('layouts/internal-banner.ejs') %>
+
+<% courses.forEach( course => { %>
+    <div class="container">
+        <div class="row">
+            <div style="margin:0 auto;" class="cont-1">
+                <h2 style="margin-bottom: 5px;margin-top: 5px;"><%= course.title %></h2>
+                <img style="width:300px; height:200px;" src="<%= course.image %>" alt=''>
+                <p><%= course.preview %></p>
+                <p><%= course.description %></p>
+                <p><%= course.course_program %></p>
+                <p><%= course.price %></p>
+            </div>       
+        </div>
+    </div>
+<% }) %>

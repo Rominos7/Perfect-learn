@@ -1,0 +1,19 @@
+<%- include('layouts/head.ejs') %>
+<%- include('layouts/internal-banner.ejs') %>
+
+
+    <div class="container">
+        <div class="row">
+            <div style="margin:0 auto;" class="cont-1">
+                <h2 style="margin-bottom: 5px;margin-top: 5px;"><%= courses.title %></h2>
+                <img style="width:300px; height:200px;" src="<%= courses.image %>" alt=''>
+                <p><%= courses.preview %></p>
+                <p><%= courses.description %></p>
+                <p><%= courses.course_program %></p>
+                <p>Price : <%= courses.price %> $</p>
+            </div>       
+        </div>
+    </div>
+
+
+<%- include('layouts/footer.ejs') %>
